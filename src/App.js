@@ -1,9 +1,12 @@
 import React from "react";
 
+// Pages
+import AboutUs from "./pages/AboutUs";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="App">
+      <AboutUs />
     </div>
   );
 };
