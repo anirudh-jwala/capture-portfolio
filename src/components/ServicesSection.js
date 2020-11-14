@@ -13,9 +13,20 @@ import teamwork from "../img/teamwork.svg";
 // Images
 import home2 from "../img/home2.png";
 
+// Scroll animation - custom hook
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
+
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <Services>
+    <Services
+      ref={element}
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+    >
       <Description>
         <h2>
           High <span>quality</span> services
