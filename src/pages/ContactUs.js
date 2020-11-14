@@ -7,6 +7,9 @@ import { pageAnimation, titleAnim } from "../animation";
 // Styled components
 import styled from "styled-components";
 
+// Scroll top
+import ScrollTop from "../components/ScrollTop";
+
 const ContactUs = () => {
   return (
     <ContactStyle
@@ -43,6 +46,7 @@ const ContactUs = () => {
           </Social>
         </Hide>
       </div>
+      <ScrollTop />
     </ContactStyle>
   );
 };
