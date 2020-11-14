@@ -26,7 +26,7 @@ export const Description = styled.div`
   @media screen and (max-width: 1300px) {
     padding: 0;
     button: {
-      margin: 2rem 0rem 5rem 0rem;
+      padding: 2rem 0rem 5rem 0rem;
     }
   }
 `;
