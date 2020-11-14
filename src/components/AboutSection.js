@@ -11,6 +11,7 @@ import home1 from "../img/home1.png";
 
 // Animation
 import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -38,6 +39,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="Guy with a camera" />
       </Image>
+      <Wave />
     </About>
   );
 };
