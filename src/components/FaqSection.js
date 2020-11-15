@@ -12,14 +12,14 @@ import { AnimateSharedLayout } from "framer-motion";
 
 // Use scroll animation
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { fade } from "../animation";
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
 
   return (
     <Faq
-      variants={scrollReveal}
+      variants={fade}
       ref={element}
       animate={controls}
       initial="hidden"
